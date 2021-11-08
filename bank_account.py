@@ -60,12 +60,13 @@ class BankAccount:
 
 
 # Instantiate Bank Accounts - Create 2 Accounts
+nick = BankAccount (int_rate = 0.01, account_balance = 500)
 wayne = BankAccount (int_rate = 0.01, account_balance = 0)
 russell = BankAccount(int_rate = 0.01, account_balance = 20000)
 
 
-
-wayne.deposit(5000000).deposit(5000000).deposit(9000000).withdraw(3000000).yield_interest().display_account_info()
-russell.deposit(500000).deposit(700000).withdraw(100000).withdraw(50000).withdraw(50000).withdraw(200000).yield_interest().display_account_info()
+nick.deposit(600).deposit(700).withdraw(200).yield_interest()
+wayne.deposit(5000000).deposit(5000000).deposit(9000000).withdraw(3000000).yield_interest()
+russell.deposit(500000).deposit(700000).withdraw(100000).withdraw(50000).withdraw(50000).withdraw(200000).yield_interest()
 
 BankAccount.print_all_accounts()
